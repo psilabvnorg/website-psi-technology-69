@@ -13,7 +13,7 @@
   <link rel="preload" href="fonts/bevietnampro-Regular.woff2" as="font" type="font/woff2" crossorigin />
 </head>
 <body>
-  <a class="skip" href="#about" data-i18n="nav.skip">Bỏ qua đến nội dung</a>
+  <a class="skip" href="#products" data-i18n="nav.skip">Bỏ qua đến nội dung</a>
 
   <!-- 3D logo stage (fixed, behind the content) -->
   <div class="stage" aria-hidden="true">
@@ -28,10 +28,10 @@
         <img src="brand/psi-logo-trang.svg" alt="PSI" width="98" height="30" />
       </a>
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="#about" data-i18n="nav.about">Giới thiệu</a>
-        <a href="#lines" data-i18n="nav.lines">Hệ sinh thái</a>
         <a href="#products" data-i18n="nav.products">Sản phẩm</a>
         <a href="#network" data-i18n="nav.network">Mạng lưới sạc</a>
+        <a href="#lines" data-i18n="nav.lines">Hệ sinh thái</a>
+        <a href="#about" data-i18n="nav.about">Giới thiệu</a>
         <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
       </nav>
       <div class="hdr-act">
@@ -60,56 +60,27 @@
         </div>
       </div>
       <div class="wrap">
-        <dl class="stats" data-reveal style="--d:.32s">
-          <div><dt><b data-count="200">200</b><small>km</small></dt><dd data-i18n="hero.s1">Quãng đường / lần sạc</dd></div>
-          <div><dt><b data-count="150">150</b><small>km</small></dt><dd data-i18n="hero.s2">Sạc 1 giờ đi được</dd></div>
-          <div><dt><b data-count="1">1</b><small data-i18n="hero.s3u">tấn</small></dt><dd data-i18n="hero.s3">Tải trọng xe 3 bánh</dd></div>
-          <div><dt><b data-count="10">10</b><small data-i18n="hero.s4u">năm</small></dt><dd data-i18n="hero.s4">Bảo hành khung Inox 304</dd></div>
-        </dl>
-      </div>
-      <a class="scroll-hint" href="#about"><span data-i18n="hero.scroll">Cuộn để khám phá</span><i></i></a>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="sec about" id="about" data-logo="about">
-      <div class="wrap about-grid">
-        <div class="about-copy">
-          <p class="eyebrow" data-reveal data-i18n="about.eyebrow">01 · Về PSI</p>
-          <h2 class="display h2" data-reveal data-i18n="about.title">Từ xưởng của chúng tôi ra đường phố.</h2>
-          <p class="body" data-reveal data-i18n="about.body"></p>
-          <ul class="chips" data-reveal>
-            <li data-i18n="about.c1">Kỹ thuật điện</li>
-            <li data-i18n="about.c2">Kỹ thuật cơ khí</li>
-            <li data-i18n="about.c3">Tự động hoá</li>
-            <li data-i18n="about.c4">Gia công CNC</li>
-            <li data-i18n="about.c5">Lắp ráp pin</li>
-            <li data-i18n="about.c6">Dây chuyền sản xuất</li>
-          </ul>
-          <ul class="locs" id="locs" data-reveal></ul>
-        </div>
-        <div class="mosaic">
-          <figure class="m1" data-reveal data-parallax="-0.06"><img src="img/about-electrical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c1"></figcaption></figure>
-          <figure class="m2" data-reveal style="--d:.1s" data-parallax="0.05"><img src="img/about-cnc.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c4"></figcaption></figure>
-          <figure class="m3" data-reveal data-parallax="0.08"><img src="img/battery-pack.webp" alt="" loading="lazy" width="425" height="531" /><figcaption data-i18n="about.c5"></figcaption></figure>
-          <figure class="m4" data-reveal style="--d:.1s" data-parallax="-0.04"><img src="img/about-mechanical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c2"></figcaption></figure>
-          <figure class="m5" data-reveal data-parallax="-0.05"><img src="img/about-automation.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c3"></figcaption></figure>
-          <figure class="m6" data-reveal style="--d:.1s" data-parallax="0.06"><img src="img/about-production-1.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c6"></figcaption></figure>
-        </div>
-      </div>
-      <div class="wrap">
-        <figure class="wide" data-reveal>
-          <img src="img/about-warehouse.webp" alt="" loading="lazy" width="1600" height="900" />
-          <figcaption data-i18n="about.wide">Nhà xưởng PSI</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- PRODUCT LINES -->
-    <section class="sec lines" id="lines" data-logo="lines">
-      <div class="wrap">
-        <p class="eyebrow center" data-reveal data-i18n="lines.eyebrow">02 · Hệ sinh thái</p>
-        <h2 class="display h2 center" data-reveal data-i18n="lines.title">Bốn dòng sản phẩm, một dòng năng lượng.</h2>
-        <div class="line-grid" id="lineGrid"></div>
+        <ul class="usps" data-reveal style="--d:.32s">
+          <li>
+            <span class="usp-ico flags" aria-hidden="true">
+              <svg viewBox="0 0 30 20"><rect width="30" height="10" fill="#EF3340"/><rect y="10" width="30" height="10" fill="#fff"/><circle cx="7.2" cy="5" r="3.3" fill="#fff"/><circle cx="8.6" cy="5" r="3.3" fill="#EF3340"/><g fill="#fff"><circle cx="10.6" cy="2.9" r=".55"/><circle cx="12.4" cy="4.2" r=".55"/><circle cx="11.7" cy="6.4" r=".55"/><circle cx="9.5" cy="6.4" r=".55"/><circle cx="8.8" cy="4.2" r=".55"/></g></svg>
+              <svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#DA251D"/><polygon fill="#FFFF00" points="15,4 16.18,7.63 20,7.63 16.91,9.87 18.09,13.5 15,11.26 11.91,13.5 13.09,9.87 10,7.63 13.82,7.63"/></svg>
+            </span>
+            <b data-i18n="usp.1t">Singapore × Việt Nam</b><span data-i18n="usp.1d"></span>
+          </li>
+          <li>
+            <span class="usp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l5 3V9l5 3V5h4v16"/></svg></span>
+            <b data-i18n="usp.2t">R&amp;D nội bộ, tích hợp dọc</b><span data-i18n="usp.2d"></span>
+          </li>
+          <li>
+            <span class="usp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+            <b data-i18n="usp.3t">AI-first</b><span data-i18n="usp.3d"></span>
+          </li>
+          <li>
+            <span class="usp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span>
+            <b data-i18n="usp.4t">Phần cứng mạnh phần mềm</b><span data-i18n="usp.4d"></span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -165,6 +136,60 @@
             <li data-i18n="network.b3">PSI hỗ trợ lắp đặt sạc</li>
           </ul>
           <a class="btn btn-grad" data-reveal data-messenger href="https://m.me/tungxethovn" target="_blank" rel="noopener" data-i18n="network.cta">Đăng ký hợp tác</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT LINES -->
+    <section class="sec lines" id="lines" data-logo="lines">
+      <div class="wrap">
+        <p class="eyebrow center" data-reveal data-i18n="lines.eyebrow">02 · Hệ sinh thái</p>
+        <h2 class="display h2 center" data-reveal data-i18n="lines.title">Bốn dòng sản phẩm, một dòng năng lượng.</h2>
+        <div class="line-grid" id="lineGrid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sec about" id="about" data-logo="about">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <p class="eyebrow" data-reveal data-i18n="about.eyebrow">01 · Về PSI</p>
+          <h2 class="display h2" data-reveal data-i18n="about.title">Từ xưởng của chúng tôi ra đường phố.</h2>
+          <p class="body" data-reveal data-i18n="about.body"></p>
+          <ul class="chips" data-reveal>
+            <li data-i18n="about.c1">Kỹ thuật điện</li>
+            <li data-i18n="about.c2">Kỹ thuật cơ khí</li>
+            <li data-i18n="about.c3">Tự động hoá</li>
+            <li data-i18n="about.c4">Gia công CNC</li>
+            <li data-i18n="about.c5">Lắp ráp pin</li>
+            <li data-i18n="about.c6">Dây chuyền sản xuất</li>
+          </ul>
+          <ul class="locs" id="locs" data-reveal></ul>
+        </div>
+        <div class="mosaic">
+          <figure class="m1" data-reveal data-parallax="-0.06"><img src="img/about-electrical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c1"></figcaption></figure>
+          <figure class="m2" data-reveal style="--d:.1s" data-parallax="0.05"><img src="img/about-cnc.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c4"></figcaption></figure>
+          <figure class="m3" data-reveal data-parallax="0.08"><img src="img/battery-pack.webp" alt="" loading="lazy" width="425" height="531" /><figcaption data-i18n="about.c5"></figcaption></figure>
+          <figure class="m4" data-reveal style="--d:.1s" data-parallax="-0.04"><img src="img/about-mechanical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c2"></figcaption></figure>
+          <figure class="m5" data-reveal data-parallax="-0.05"><img src="img/about-automation.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c3"></figcaption></figure>
+          <figure class="m6" data-reveal style="--d:.1s" data-parallax="0.06"><img src="img/about-production-1.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c6"></figcaption></figure>
+        </div>
+      </div>
+      <div class="wrap">
+        <figure class="wide" data-reveal>
+          <img src="img/about-warehouse.webp" alt="" loading="lazy" width="1600" height="900" />
+          <figcaption data-i18n="about.wide">Nhà xưởng PSI</figcaption>
+        </figure>
+      </div>
+      <div class="wrap">
+        <div class="founders">
+          <h3 class="display founders-title" data-reveal><img class="psi-mark" src="brand/psi-bieu-tuong-gradient.svg" alt="" width="40" height="48" /><span data-i18n="founders.title">Đội ngũ sáng lập đã xây dựng và đưa ra thị trường cả phần cứng lẫn phần mềm</span></h3>
+          <div class="founder-grid" id="founderGrid"></div>
+        </div>
+        <div class="testis">
+          <p class="eyebrow" data-reveal data-i18n="testi.eyebrow">Khách hàng nói gì</p>
+          <h3 class="display h2" data-reveal data-i18n="testi.title">Người chạy PSI 69 mỗi ngày.</h3>
+          <div class="testi-grid" id="testiGrid"></div>
         </div>
       </div>
     </section>

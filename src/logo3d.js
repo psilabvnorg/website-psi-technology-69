@@ -22,12 +22,13 @@ const GRAD_P1 = new THREE.Vector2(0, 686);
 
 // Poses, by section name. x/y are fractions of the half viewport.
 export const POSES = {
+  // listed in page order; ry keeps increasing so the spin direction is constant
   hero: { x: 0.56, y: 0.0, rx: 0.08, ry: -0.45, rz: 0, s: 1.0, spread: 0, lift: 0, glow: 0.9, o: 1 },
-  about: { x: -0.55, y: 0.0, rx: -0.15, ry: 2.4, rz: 0.1, s: 1.3, spread: 0.7, lift: 0.35, glow: 0.45, o: 0.36 },
-  lines: { x: 0.0, y: 0.0, rx: 0.35, ry: 4.2, rz: -0.2, s: 2.3, spread: 1.4, lift: 0.8, glow: 0.35, o: 0.3 },
-  products: { x: 0.52, y: 0.05, rx: -0.1, ry: 5.6, rz: 0, s: 1.6, spread: 1.0, lift: 0.5, glow: 0.3, o: 0.2 },
-  street: { x: -0.1, y: 0.0, rx: 0.25, ry: 6.6, rz: 0.15, s: 2.0, spread: 1.2, lift: 0.6, glow: 0.3, o: 0.28 },
-  network: { x: -0.46, y: 0.0, rx: -0.05, ry: 8.4, rz: 0, s: 1.2, spread: 0.6, lift: 0.3, glow: 0.5, o: 0.45 },
+  products: { x: 0.52, y: 0.05, rx: -0.1, ry: 1.9, rz: 0, s: 1.6, spread: 1.0, lift: 0.5, glow: 0.3, o: 0.18 },
+  street: { x: -0.1, y: 0.0, rx: 0.25, ry: 3.6, rz: 0.15, s: 2.0, spread: 1.2, lift: 0.6, glow: 0.3, o: 0.28 },
+  network: { x: -0.46, y: 0.0, rx: -0.05, ry: 5.2, rz: 0, s: 1.2, spread: 0.6, lift: 0.3, glow: 0.5, o: 0.45 },
+  lines: { x: 0.0, y: 0.0, rx: 0.35, ry: 7.0, rz: -0.2, s: 2.3, spread: 1.4, lift: 0.8, glow: 0.35, o: 0.3 },
+  about: { x: -0.55, y: 0.0, rx: -0.15, ry: 8.8, rz: 0.1, s: 1.3, spread: 0.7, lift: 0.35, glow: 0.45, o: 0.3 },
   contact: { x: 0.0, y: 0.0, rx: 0, ry: Math.PI * 4, rz: 0, s: 1.75, spread: 0, lift: 0, glow: 1, o: 0.42 },
 };
 const KEYS = ['x', 'y', 'rx', 'ry', 'rz', 's', 'spread', 'lift', 'glow', 'o'];
