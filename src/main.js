@@ -1,6 +1,7 @@
 import './style.css';
 import Lenis from 'lenis';
-import { T, PRODUCTS, LINES, ADDRESSES } from './content.js';
+import { T, PRODUCTS, LINES, ADDRESSES, FOUNDERS, TESTIMONIALS } from './content.js';
+import { slideshowHTML, initSlideshows } from './slideshow.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -11,8 +12,8 @@ const LS_KEY = 'psi-lang';
 let lang = 'vi';
 try {
   const saved = localStorage.getItem(LS_KEY);
+  // Vietnamese by default; only the visitor's own earlier choice overrides it.
   if (saved === 'vi' || saved === 'en') lang = saved;
-  else if (!navigator.language?.toLowerCase().startsWith('vi')) lang = 'en';
 } catch (e) {
   /* storage blocked: default to VI */
 }
@@ -34,6 +35,8 @@ function applyLang() {
   renderLines();
   renderFilters();
   renderProducts();
+  renderFounders();
+  renderTestimonials();
 }
 
 function setLang(l) {
@@ -117,10 +120,11 @@ function renderProducts() {
         .map((s) => `<div><dt>${esc(s.v)}${L(s.u) ? `<small>${esc(L(s.u))}</small>` : ''}</dt><dd>${esc(L(s.l))}</dd></div>`)
         .join('');
       return `<article class="card" data-reveal style="--d:${(i % 3) * 0.08}s">
-        <div class="card-media${p.contain ? ' contain' : ''}">
-          <img src="${p.img}" alt="${esc(L(p.alt))}" loading="lazy" />
-          <span class="tag">${String(idx).padStart(2, '0')} · PSI ${LINES[p.line].name}</span>
-        </div>
+        ${slideshowHTML(p.imgs, {
+          alt: esc(L(p.alt)),
+          tag: `${String(idx).padStart(2, '0')} · PSI ${LINES[p.line].name}`,
+          labels: { prev: esc(t('slide.prev')), next: esc(t('slide.next')), go: esc(t('slide.go')) },
+        })}
         <div class="card-body">
           <h3>${esc(L(p.name))}</h3>
           <p class="tagline">${esc(L(p.tagline))}</p>
@@ -135,6 +139,35 @@ function renderProducts() {
       </article>`;
     })
     .join('');
+  initSlideshows($('#prodGrid'));
+  observeReveals();
+}
+
+// ---------- founders & testimonials ----------
+function renderFounders() {
+  $('#founderGrid').innerHTML = FOUNDERS.map(
+    (f, i) => `<article class="founder" data-reveal style="--d:${(i % 2) * 0.08}s">
+      <img src="${f.img}" alt="${esc(f.name)}" width="112" height="112" loading="lazy" />
+      <div>
+        <h4>${esc(f.name)}</h4>
+        <p class="f-role">${esc(L(f.role))}</p>
+        <p class="f-bio">${esc(L(f.bio))}</p>
+      </div>
+    </article>`
+  ).join('');
+  observeReveals();
+}
+
+function renderTestimonials() {
+  $('#testiGrid').innerHTML = TESTIMONIALS.map(
+    (q, i) => `<figure class="testi" data-reveal style="--d:${(i % 3) * 0.08}s">
+      <img src="${q.img}" alt="" width="480" height="640" loading="lazy" />
+      <div>
+        <blockquote>“${esc(L(q.quote))}”</blockquote>
+        <figcaption>${esc(L(q.who))}</figcaption>
+      </div>
+    </figure>`
+  ).join('');
   observeReveals();
 }
 
