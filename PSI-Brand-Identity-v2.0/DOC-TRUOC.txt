@@ -1,0 +1,13 @@
+BỘ NHẬN DIỆN PSI VERSION 2.0 — chốt 31/10/2026
+
+00_Huong-dan      PDF trình bày + file quy chuẩn (màu, logo, cách dùng)
+01_Logo-chinh     Logo PSI (ngang, dọc, biểu tượng, app icon) — SVG vector + PNG nền trong suốt
+                  chinh = biểu tượng gradient xanh→tím + chữ tím (nền trắng)
+                  trang = dùng trên nền tím/ảnh tối · tim = 1 màu (in, khắc, sơn xe)
+02_Mau-sac        Bảng màu HEX / RGB / CMYK, file CSS cho web
+03_Logo-noi-bo-Marketing   Logo team Marketing + ảnh đại diện 1024px (chỉ dùng nội bộ)
+04_Font           Archivo + Be Vietnam Pro (miễn phí, dùng thương mại)
+05_Bang-trinh-bay Ảnh các bảng trình bày
+
+Quy tắc: không vẽ lại / kéo méo / đổi khoảng cách logo — chỉ dùng file có sẵn.
+Gửi in ấn, sơn xe, làm biển: dùng file SVG (vector). Đăng mạng xã hội: dùng PNG.

@@ -1,0 +1,20 @@
+BẢNG MÀU PSI VERSION 2.0
+(CMYK là quy đổi tham khảo — chốt màu in/sơn bằng mẫu thật)
+
+Tím PSI (chủ đạo)                  HEX #4B2384   RGB (75, 35, 132)   CMYK (43, 73, 0, 48)
+Tím sáng (đầu gradient)            HEX #8B5CF6   RGB (139, 92, 246)   CMYK (43, 63, 0, 4)
+Tím giữa gradient                  HEX #5B2FB0   RGB (91, 47, 176)   CMYK (48, 73, 0, 31)
+Tím đậm (cuối gradient)            HEX #3E1C78   RGB (62, 28, 120)   CMYK (48, 77, 0, 53)
+Tím đêm (nền tối)                  HEX #2E1458   RGB (46, 20, 88)   CMYK (48, 77, 0, 65)
+Xanh biển PSI (nhấn)               HEX #38B6F0   RGB (56, 182, 240)   CMYK (77, 24, 0, 6)
+Xanh biển sáng                     HEX #8FDCFF   RGB (143, 220, 255)   CMYK (44, 14, 0, 0)
+Tím biểu tượng (cuối gradient)     HEX #7B3FE4   RGB (123, 63, 228)   CMYK (46, 72, 0, 11)
+Tím pastel                         HEX #EFE7FB   RGB (239, 231, 251)   CMYK (5, 8, 0, 2)
+Xanh pastel                        HEX #D6EFFD   RGB (214, 239, 253)   CMYK (15, 6, 0, 1)
+Nền sáng                           HEX #F5F3F8   RGB (245, 243, 248)   CMYK (1, 2, 0, 3)
+Vàng an toàn (phản quang)          HEX #FFB020   RGB (255, 176, 32)   CMYK (0, 31, 87, 0)
+Đen gầm xe                         HEX #0B0B0C   RGB (11, 11, 12)   CMYK (8, 8, 0, 95)
+
+Gradient chính (135°): #8B5CF6 → #5B2FB0 → #3E1C78
+Gradient biểu tượng: #38B6F0 (trên phải) → #7B3FE4 (dưới trái)
+Nút chính (ngang): #8B5CF6 → #4B2384

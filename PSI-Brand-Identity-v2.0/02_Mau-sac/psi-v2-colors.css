@@ -1,0 +1,17 @@
+:root{
+  --psi-0: #4B2384; /* Tím PSI (chủ đạo) */
+  --psi-1: #8B5CF6; /* Tím sáng (đầu gradient) */
+  --psi-2: #5B2FB0; /* Tím giữa gradient */
+  --psi-3: #3E1C78; /* Tím đậm (cuối gradient) */
+  --psi-4: #2E1458; /* Tím đêm (nền tối) */
+  --psi-5: #38B6F0; /* Xanh biển PSI (nhấn) */
+  --psi-6: #8FDCFF; /* Xanh biển sáng */
+  --psi-7: #7B3FE4; /* Tím biểu tượng (cuối gradient) */
+  --psi-8: #EFE7FB; /* Tím pastel */
+  --psi-9: #D6EFFD; /* Xanh pastel */
+  --psi-10: #F5F3F8; /* Nền sáng */
+  --psi-11: #FFB020; /* Vàng an toàn (phản quang) */
+  --psi-12: #0B0B0C; /* Đen gầm xe */
+  --psi-gradient: linear-gradient(135deg,#8B5CF6 0%,#5B2FB0 45%,#3E1C78 100%);
+  --psi-gradient-symbol: linear-gradient(225deg,#38B6F0,#7B3FE4);
+}
