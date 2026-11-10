@@ -1,0 +1,3 @@
+Archivo và Be Vietnam Pro là font miễn phí của Google Fonts, giấy phép SIL Open Font License 1.1 (dùng thương mại được, kể cả in ấn và web).
+Nguồn: https://fonts.google.com/specimen/Archivo · https://fonts.google.com/specimen/Be+Vietnam+Pro
+Cài đặt: nhấp đúp file .ttf > Install. Tiêu đề dùng Archivo ExtraBold, độ rộng 125% (Expanded).

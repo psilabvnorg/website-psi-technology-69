@@ -1,0 +1,18 @@
+{
+  "name": "psi-technology-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --config vite.logo.config.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6"
+  },
+  "dependencies": {
+    "lenis": "^1.1.18",
+    "three": "^0.170.0"
+  }
+}

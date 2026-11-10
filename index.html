@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PSI Technology · Xe điện chở hàng, sạc siêu nhanh, lưu điện &amp; nguồn cho AI</title>
+  <meta name="description" content="PSI Technology (Công ty TNHH PSI LAB VN): xe điện chở hàng Inox 304, sạc siêu nhanh 1,8 kW, bộ lưu điện Inverter và bộ nguồn GPU." />
+  <meta name="theme-color" content="#1a0b36" />
+  <link rel="icon" type="image/svg+xml" href="brand/psi-app-icon.svg" />
+  <meta property="og:title" content="PSI Technology" />
+  <meta property="og:type" content="website" />
+  <link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/bevietnampro-Regular.woff2" as="font" type="font/woff2" crossorigin />
+</head>
+<body>
+  <a class="skip" href="#about" data-i18n="nav.skip">Bỏ qua đến nội dung</a>
+
+  <!-- 3D logo stage (fixed, behind the content) -->
+  <div class="stage" aria-hidden="true">
+    <canvas id="logo3d"></canvas>
+    <img class="stage-fallback" src="brand/psi-bieu-tuong-gradient.svg" alt="" />
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="hdr" id="hdr">
+    <div class="hdr-in">
+      <a class="hdr-logo" href="#top" aria-label="PSI Technology">
+        <img src="brand/psi-logo-trang.svg" alt="PSI" width="98" height="30" />
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="#lines" data-i18n="nav.lines">Hệ sinh thái</a>
+        <a href="#products" data-i18n="nav.products">Sản phẩm</a>
+        <a href="#network" data-i18n="nav.network">Mạng lưới sạc</a>
+        <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
+      <div class="hdr-act">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="vi" aria-pressed="true">VI</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-sm btn-grad hdr-call" data-tel href="tel:+84366462069"><span data-i18n="nav.call">Gọi</span>&nbsp;<span data-phone>0366 462 069</span></a>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" data-i18n-aria="nav.menu" aria-label="Mở menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="sec hero" id="top" data-logo="hero">
+      <div class="wrap hero-in">
+        <p class="eyebrow" data-reveal><span class="dot"></span><span data-i18n="hero.eyebrow">PSI Technology · PSI LAB VN</span></p>
+        <h1 class="display hero-title" data-reveal style="--d:.08s" data-i18n="hero.title">Một nền tảng năng lượng. Từ đường phố đến máy chủ AI.</h1>
+        <p class="lead" data-reveal style="--d:.16s" data-i18n="hero.lead">Xe điện chở hàng, sạc siêu nhanh, lưu điện và nguồn cho AI, do PSI thiết kế và sản xuất tại Việt Nam.</p>
+        <div class="cta-row" data-reveal style="--d:.24s">
+          <a class="btn btn-grad" href="#products" data-i18n="hero.cta1">Xem sản phẩm</a>
+          <a class="btn btn-ghost" data-messenger href="https://m.me/tungxethovn" target="_blank" rel="noopener" data-i18n="hero.cta2">Nhắn tin tư vấn</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <dl class="stats" data-reveal style="--d:.32s">
+          <div><dt><b data-count="200">200</b><small>km</small></dt><dd data-i18n="hero.s1">Quãng đường / lần sạc</dd></div>
+          <div><dt><b data-count="150">150</b><small>km</small></dt><dd data-i18n="hero.s2">Sạc 1 giờ đi được</dd></div>
+          <div><dt><b data-count="1">1</b><small data-i18n="hero.s3u">tấn</small></dt><dd data-i18n="hero.s3">Tải trọng xe 3 bánh</dd></div>
+          <div><dt><b data-count="10">10</b><small data-i18n="hero.s4u">năm</small></dt><dd data-i18n="hero.s4">Bảo hành khung Inox 304</dd></div>
+        </dl>
+      </div>
+      <a class="scroll-hint" href="#about"><span data-i18n="hero.scroll">Cuộn để khám phá</span><i></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sec about" id="about" data-logo="about">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <p class="eyebrow" data-reveal data-i18n="about.eyebrow">01 · Về PSI</p>
+          <h2 class="display h2" data-reveal data-i18n="about.title">Từ xưởng của chúng tôi ra đường phố.</h2>
+          <p class="body" data-reveal data-i18n="about.body"></p>
+          <ul class="chips" data-reveal>
+            <li data-i18n="about.c1">Kỹ thuật điện</li>
+            <li data-i18n="about.c2">Kỹ thuật cơ khí</li>
+            <li data-i18n="about.c3">Tự động hoá</li>
+            <li data-i18n="about.c4">Gia công CNC</li>
+            <li data-i18n="about.c5">Lắp ráp pin</li>
+            <li data-i18n="about.c6">Dây chuyền sản xuất</li>
+          </ul>
+          <ul class="locs" id="locs" data-reveal></ul>
+        </div>
+        <div class="mosaic">
+          <figure class="m1" data-reveal data-parallax="-0.06"><img src="img/about-electrical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c1"></figcaption></figure>
+          <figure class="m2" data-reveal style="--d:.1s" data-parallax="0.05"><img src="img/about-cnc.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c4"></figcaption></figure>
+          <figure class="m3" data-reveal data-parallax="0.08"><img src="img/battery-pack.webp" alt="" loading="lazy" width="425" height="531" /><figcaption data-i18n="about.c5"></figcaption></figure>
+          <figure class="m4" data-reveal style="--d:.1s" data-parallax="-0.04"><img src="img/about-mechanical.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c2"></figcaption></figure>
+          <figure class="m5" data-reveal data-parallax="-0.05"><img src="img/about-automation.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c3"></figcaption></figure>
+          <figure class="m6" data-reveal style="--d:.1s" data-parallax="0.06"><img src="img/about-production-1.webp" alt="" loading="lazy" width="800" height="1000" /><figcaption data-i18n="about.c6"></figcaption></figure>
+        </div>
+      </div>
+      <div class="wrap">
+        <figure class="wide" data-reveal>
+          <img src="img/about-warehouse.webp" alt="" loading="lazy" width="1600" height="900" />
+          <figcaption data-i18n="about.wide">Nhà xưởng PSI</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PRODUCT LINES -->
+    <section class="sec lines" id="lines" data-logo="lines">
+      <div class="wrap">
+        <p class="eyebrow center" data-reveal data-i18n="lines.eyebrow">02 · Hệ sinh thái</p>
+        <h2 class="display h2 center" data-reveal data-i18n="lines.title">Bốn dòng sản phẩm, một dòng năng lượng.</h2>
+        <div class="line-grid" id="lineGrid"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="sec products" id="products" data-logo="products">
+      <div class="wrap">
+        <div class="prod-head">
+          <div>
+            <p class="eyebrow" data-reveal data-i18n="products.eyebrow">03 · Sản phẩm</p>
+            <h2 class="display h2" data-reveal data-i18n="products.title">Danh mục sản phẩm 2026</h2>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filter" data-reveal></div>
+        </div>
+        <div class="prod-grid" id="prodGrid"></div>
+      </div>
+    </section>
+
+    <!-- STREET -->
+    <section class="sec street" id="street" data-logo="street">
+      <div class="wrap">
+        <p class="eyebrow center" data-reveal data-i18n="street.eyebrow">04 · Trên đường phố</p>
+        <h2 class="display h2 center" data-reveal data-i18n="street.title">Chạy mỗi ngày, chở mọi thứ.</h2>
+      </div>
+      <div class="marquee" data-reveal>
+        <div class="track">
+          <img src="img/street-1.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-2.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-3.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-4.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-5.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-6.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-7.webp" alt="" loading="lazy" width="640" height="800" />
+          <img src="img/street-8.webp" alt="" loading="lazy" width="640" height="800" />
+        </div>
+      </div>
+    </section>
+
+    <!-- NETWORK -->
+    <section class="sec network" id="network" data-logo="network">
+      <div class="wrap net-grid">
+        <div class="net-photos">
+          <img class="n1" data-reveal src="img/network-1.webp" alt="" loading="lazy" width="800" height="1000" />
+          <img class="n2" data-reveal style="--d:.12s" src="img/network-2.webp" alt="" loading="lazy" width="800" height="1000" />
+          <img class="n3" data-reveal style="--d:.24s" src="img/network-3.webp" alt="" loading="lazy" width="800" height="1000" />
+        </div>
+        <div class="net-copy">
+          <p class="eyebrow" data-reveal data-i18n="network.eyebrow">05 · Mạng lưới trạm sạc</p>
+          <h2 class="display h2" data-reveal data-i18n="network.title">Mở điểm sạc PSI tại cửa hàng của bạn.</h2>
+          <p class="body" data-reveal data-i18n="network.body"></p>
+          <ul class="ticks" data-reveal>
+            <li data-i18n="network.b1">Sạc 1 giờ được 80% pin</li>
+            <li data-i18n="network.b2">Tương thích VinFast, Dat Bike, Yadea…</li>
+            <li data-i18n="network.b3">PSI hỗ trợ lắp đặt sạc</li>
+          </ul>
+          <a class="btn btn-grad" data-reveal data-messenger href="https://m.me/tungxethovn" target="_blank" rel="noopener" data-i18n="network.cta">Đăng ký hợp tác</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec contact" id="contact" data-logo="contact">
+      <div class="wrap contact-in">
+        <p class="eyebrow center" data-reveal data-i18n="contact.eyebrow">06 · Liên hệ</p>
+        <h2 class="display contact-title center" data-reveal data-i18n="contact.title">Cùng PSI chuyển động.</h2>
+        <p class="lead center" data-reveal data-i18n="contact.lead"></p>
+        <div class="c-cards">
+          <a class="c-card" data-reveal data-tel href="tel:+84366462069">
+            <span class="c-k" data-i18n="contact.hotline">Hotline / Zalo</span>
+            <span class="c-v" data-phone>0366 462 069</span>
+          </a>
+          <a class="c-card" data-reveal style="--d:.08s" data-email href="mailto:psi.lab.vn@gmail.com">
+            <span class="c-k" data-i18n="contact.email">Email</span>
+            <span class="c-v" data-email-text>psi.lab.vn@gmail.com</span>
+          </a>
+          <a class="c-card c-card-grad" data-reveal style="--d:.16s" data-messenger href="https://m.me/tungxethovn" target="_blank" rel="noopener">
+            <span class="c-k" data-i18n="contact.messenger">Messenger</span>
+            <span class="c-v" data-i18n="contact.chat">Nhắn tin ngay</span>
+          </a>
+        </div>
+        <div class="c-info" data-reveal>
+          <ul class="locs" id="locs2"></ul>
+          <div class="hours">
+            <p class="c-k" data-i18n="contact.hours">Giờ làm việc</p>
+            <p data-i18n="contact.h1"></p>
+            <p data-i18n="contact.h2"></p>
+            <p data-i18n="contact.h3"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <img src="brand/psi-logo-trang.svg" alt="PSI" width="78" height="24" />
+      <p>© 2026 <span data-company>Công ty TNHH PSI LAB VN</span>. <span data-i18n="footer.rights">Bảo lưu mọi quyền.</span></p>
+      <nav class="social" aria-label="Social">
+        <a data-social="facebook" href="https://www.facebook.com/tungxethovn" target="_blank" rel="noopener">Facebook</a>
+        <a data-social="tiktok" href="https://www.tiktok.com/@xedien6969" target="_blank" rel="noopener">TikTok</a>
+        <a data-social="youtube" href="https://www.youtube.com/@psihubvn" target="_blank" rel="noopener">YouTube</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
