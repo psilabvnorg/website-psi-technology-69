@@ -25,6 +25,10 @@ export const LINES = {
 export const PRODUCTS = [
   {
     id: 'xe-cho-hang-inox-2-banh',
+    features: [
+      { vi: 'Khung Inox 304 không gỉ, cực bền', en: 'Rust-proof, ultra-durable 304 stainless frame' },
+      { vi: 'Sạc siêu nhanh: 1 giờ đi được 150 km', en: 'Ultra-fast charging: 1 hour adds 150 km' },
+    ],
     line: 'move',
     imgs: [{ src: 'img/product-cargo-2-1.webp' }, { src: 'img/product-cargo-2-2.webp' }, { src: 'img/product-cargo-2-3.webp' }, { src: 'img/product-cargo-2-4.webp' }, { src: 'img/product-cargo-2-5.webp' }, { src: 'img/product-cargo-2-6.webp' }],
     name: { vi: 'Xe điện chở hàng Inox 304 · 2 bánh', en: 'Stainless 304 electric cargo bike · 2-wheel' },
@@ -42,6 +46,10 @@ export const PRODUCTS = [
   },
   {
     id: 'xe-cho-hang-inox-3-banh',
+    features: [
+      { vi: 'Khung Inox 304 không gỉ, cực bền', en: 'Rust-proof, ultra-durable 304 stainless frame' },
+      { vi: 'Sạc siêu nhanh: 1 giờ đi được 80 km', en: 'Ultra-fast charging: 1 hour adds 80 km' },
+    ],
     line: 'move',
     imgs: [{ src: 'img/product-cargo-3-1.webp' }],
     name: { vi: 'Xe điện chở hàng Inox 304 · 3 bánh', en: 'Stainless 304 electric cargo trike · 3-wheel' },
@@ -59,6 +67,10 @@ export const PRODUCTS = [
   },
   {
     id: 'xe-vision-dien',
+    features: [
+      { vi: 'Cốp rộng để được 3 mũ bảo hiểm', en: 'Spacious trunk fits 3 helmets' },
+      { vi: 'Sạc siêu nhanh: 1 giờ đi được 150 km', en: 'Ultra-fast charging: 1 hour adds 150 km' },
+    ],
     line: 'move',
     imgs: [{ src: 'img/product-vision-1.webp' }, { src: 'img/product-vision-2.webp' }, { src: 'img/product-vision-3.webp' }, { src: 'img/product-vision-4.webp' }, { src: 'img/product-vision-5.webp' }, { src: 'img/product-vision-6.webp' }, { src: 'img/product-vision-7.webp' }, { src: 'img/product-vision-8.webp' }],
     name: { vi: 'Xe Vision điện', en: 'Electric Vision scooter' },
@@ -76,6 +88,10 @@ export const PRODUCTS = [
   },
   {
     id: 'sac-sieu-nhanh-1-8kw',
+    features: [
+      { vi: 'Tương thích nhiều dòng xe VinFast, Dat Bike, Yadea…', en: 'Works with many VinFast, Dat Bike, Yadea… models' },
+      { vi: 'Sạc 1 giờ được 80% pin', en: 'Charges to 80% in 1 hour' },
+    ],
     line: 'charge',
     imgs: [{ src: 'img/product-charger-1.webp' }, { src: 'img/product-charger-2.webp' }, { src: 'img/product-charger-3.webp' }],
     name: { vi: 'Sạc siêu nhanh 1,8 kW', en: '1.8 kW ultra-fast charger' },
@@ -91,6 +107,11 @@ export const PRODUCTS = [
   },
   {
     id: 'bo-luu-dien-inverter',
+    features: [
+      { vi: 'Lưu từ 2 đến 10 số điện', en: 'Stores 2 to 10 kWh' },
+      { vi: 'Bù tải với máy nổ (máy phát)', en: 'Load-sharing with a generator' },
+      { vi: 'Điện sin chuẩn như điện lưới, không lo hỏng, cháy thiết bị', en: 'Pure sine wave like grid power, protects your appliances' },
+    ],
     line: 'drive',
     imgs: [{ src: 'img/product-storage-1.webp', contain: true }, { src: 'img/product-storage-2.webp' }, { src: 'img/product-storage-3.webp' }, { src: 'img/product-storage-4.webp' }, { src: 'img/product-storage-5.webp' }, { src: 'img/product-storage-6.webp' }],
     name: { vi: 'Bộ lưu điện Inverter', en: 'Inverter energy storage system' },
@@ -106,6 +127,10 @@ export const PRODUCTS = [
   },
   {
     id: 'bo-nguon-gpu',
+    features: [
+      { vi: 'Điện áp chính xác tới từng milivôn', en: 'Voltage accurate to the millivolt' },
+      { vi: 'Cực kỳ bền bỉ, vận hành liên tục', en: 'Extremely durable for continuous operation' },
+    ],
     line: 'core',
     imgs: [{ src: 'img/product-gpu-1.webp', contain: true }],
     name: { vi: 'Bộ nguồn cho GPU', en: 'GPU power supply' },
@@ -137,7 +162,7 @@ export const T = {
 
     'hero.eyebrow': 'PSI Technology · PSI LAB VN',
     'hero.title': 'Một nền tảng năng lượng. Từ đường phố đến máy chủ AI.',
-    'hero.lead': 'Xe điện chở hàng, sạc siêu nhanh, lưu điện và nguồn cho AI, do PSI thiết kế và sản xuất tại Việt Nam.',
+    'hero.lead': 'Xe điện, sạc, lưu điện và nguồn AI. Sản xuất tại Việt Nam.',
     'hero.cta1': 'Xem sản phẩm',
     'hero.cta2': 'Nhắn tin tư vấn',
     'usp.1t': 'Singapore × Việt Nam',
@@ -214,6 +239,28 @@ export const T = {
     'contact.maps': 'Mở bản đồ',
 
     'footer.rights': 'Bảo lưu mọi quyền.',
+    'ui.more': 'Xem chi tiết',
+    'ui.close': 'Đóng',
+    'ui.flipBack': 'Lật lại',
+    'ui.tap': 'Chạm để khám phá',
+    'usp.1l': 'Gặp đội ngũ sáng lập',
+    'usp.2l': 'Xem nhà xưởng',
+    'products.specs': 'Thông số',
+    'products.features': 'Điểm nổi bật',
+    'products.warranty': 'Bảo hành: khung Inox 304 10 năm · động cơ 2 năm',
+    'products.call': 'Gọi tư vấn',
+    'lines.see': 'Xem sản phẩm',
+    'about.lead': 'Thiết kế, gia công và lắp ráp tại Việt Nam.',
+    'about.story': 'Câu chuyện & nhà xưởng',
+    'about.storyTitle': 'Câu chuyện PSI',
+    'about.where': 'Chúng tôi ở đâu',
+    'founders.more': 'Xem hồ sơ',
+    'founders.eyebrow': 'Đội ngũ sáng lập',
+    'testi.hint': 'Chạm để đọc',
+    'network.more': 'Mô hình hợp tác',
+    'network.drawerTitle': 'Nhượng quyền trạm sạc PSI',
+    'contact.more': 'Địa chỉ & giờ làm việc',
+    'street.hint': 'Chạm vào ảnh để phóng to',
   },
   en: {
     'meta.title': 'PSI Technology · Electric cargo vehicles, fast charging, storage & AI power',
@@ -230,7 +277,7 @@ export const T = {
 
     'hero.eyebrow': 'PSI Technology · PSI LAB VN',
     'hero.title': 'One energy platform. From the street to the AI server.',
-    'hero.lead': 'Electric cargo vehicles, fast charging, energy storage and AI power, designed and built by PSI in Vietnam.',
+    'hero.lead': 'EVs, charging, storage and AI power. Made in Vietnam.',
     'hero.cta1': 'See products',
     'hero.cta2': 'Message us',
     'usp.1t': 'Singapore × Vietnam',
@@ -307,6 +354,28 @@ export const T = {
     'contact.maps': 'Open in Maps',
 
     'footer.rights': 'All rights reserved.',
+    'ui.more': 'Details',
+    'ui.close': 'Close',
+    'ui.flipBack': 'Flip back',
+    'ui.tap': 'Tap to explore',
+    'usp.1l': 'Meet the founders',
+    'usp.2l': 'See the workshop',
+    'products.specs': 'Specs',
+    'products.features': 'Highlights',
+    'products.warranty': 'Warranty: 10-year stainless 304 frame · 2-year motor',
+    'products.call': 'Call us',
+    'lines.see': 'See products',
+    'about.lead': 'Designed, machined and assembled in Vietnam.',
+    'about.story': 'Our story & workshop',
+    'about.storyTitle': 'The PSI story',
+    'about.where': 'Where we are',
+    'founders.more': 'View profile',
+    'founders.eyebrow': 'Founding team',
+    'testi.hint': 'Tap to read',
+    'network.more': 'How it works',
+    'network.drawerTitle': 'The PSI charging franchise',
+    'contact.more': 'Addresses & hours',
+    'street.hint': 'Tap a photo to enlarge',
   },
 };
 

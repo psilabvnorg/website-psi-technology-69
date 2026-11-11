@@ -37,12 +37,14 @@ export function slideshowHTML(imgs, o) {
   return `<div class="card-media${n > 1 ? ' is-show' : ''}">${slides}${controls}<span class="tag">${o.tag}</span></div>`;
 }
 
-let live = [];
+// Live slideshows, grouped by the container they were bound in, so the
+// product grid and the detail panel can each be re-rendered on their own.
+const live = new Map();
 
-/** (Re)binds every slideshow inside `scope`. Call after each render. */
+/** (Re)binds every slideshow inside `scope`. Call after each render of it. */
 export function initSlideshows(scope = document) {
-  live.forEach((s) => s.destroy());
-  live = Array.from(scope.querySelectorAll('.card-media.is-show')).map(makeSlideshow);
+  (live.get(scope) || []).forEach((s) => s.destroy());
+  live.set(scope, Array.from(scope.querySelectorAll('.card-media.is-show')).map(makeSlideshow));
 }
 
 function makeSlideshow(root) {
